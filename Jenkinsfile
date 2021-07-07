@@ -1,7 +1,7 @@
 @Library('my-shared-lib') _
 
 pipeline {
-    agent none
+    agent any
     stages {
         stage('Example Build') {
             steps {
