@@ -1,3 +1,12 @@
 @Library('my-shared-lib') _
 
-checkout ()
+def call(args){
+    pipeline {
+        agent any 
+        stages { 
+            stage('Build') {
+                steps {
+                    echo 'build'
+                }
+            }
+        }
